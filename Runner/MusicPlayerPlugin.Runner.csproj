@@ -11,7 +11,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MusicPlayerPlugin.csproj" />
-    <ProjectReference Include="..\..\..\shared\FryPdf.Runner.Shared\FryPdf.Runner.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Local copies of M3 Expressive tokens and styles (no external monorepo dependencies) -->
+    <AvaloniaResource Include="Material3ExpressiveTokens.axaml" />
+    <AvaloniaResource Include="Material3ExpressiveStyles.axaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,7 +28,6 @@
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.11" />
     <PackageReference Include="FryPdf.PluginSdk" Version="0.0.8" />
-    <PackageReference Include="QuestPDF" Version="2026.8.0" />
     <PackageReference Include="SoundFlow" Version="1.4.1" />
     <PackageReference Include="TagLibSharp" Version="2.3.0" />
   </ItemGroup>
